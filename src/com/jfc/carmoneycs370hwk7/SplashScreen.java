@@ -30,7 +30,7 @@ public class SplashScreen extends Activity {
                 try {
                     synchronized(this){
                         // Wait given period of time or exit on touch
-                        wait(5000);
+                        wait(2000);
                     }
                 }
                 catch(InterruptedException ex){                    
@@ -42,7 +42,7 @@ public class SplashScreen extends Activity {
                 Intent intent = new Intent();
                 intent.setClass(sPlashScreen, MainActivity.class);
                 startActivity(intent);
-                stop();                    
+               // stop();	//Deprecated
             }
         };
         

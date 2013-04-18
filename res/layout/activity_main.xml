@@ -8,9 +8,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/configPrefs"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_marginTop="21dp"
+        android:text="Configure Preferences"
+        android:onClick="configPreferences"  />
+
+    <Button
+        android:id="@+id/getAssignments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/configPrefs"
+        android:layout_below="@+id/configPrefs"
+        android:layout_marginTop="27dp"
+        android:text="Retrieve assignments list from server" />
+
+    <Button
+        android:id="@+id/manageAssignments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/getAssignments"
+        android:layout_below="@+id/getAssignments"
+        android:layout_marginTop="22dp"
+        android:text="Manage Assignments" />
 
 </RelativeLayout>

@@ -22,11 +22,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="SplashScreen">
+        <activity android:name="com.jfc.carmoneycs370hwk7.SplashScreen" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jfc.carmoneycs370hwk7.ConfigPreferencesActivity"
+            android:label="@string/title_activity_config_preferences"
+            android:parentActivityName="com.jfc.carmoneycs370hwk7.ConfigPreferencesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jfc.carmoneycs370hwk7.ConfigPreferencesActivity" />
         </activity>
     </application>
 
